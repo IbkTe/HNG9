@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import Link from './components/Link.js';
 import slackIcon from './img/slack-icon.svg';
 import profile from './img/download (3).jpeg';
 import footimg from "./img/download (1).png" ;
@@ -8,14 +8,18 @@ import ingressive from "./img/images (2).png";
 
 
 function App() {
+  const links = [
+    {id: ''}
+  ];
+
   return (
     <div className="container">
       <header>
-        <img src={profile} alt="" /> 
+        <img id="profile__img" src={profile} alt="" /> 
         <p className="name">Annette Black</p>
       </header>
       <div className="sub-container">
-        <p className="list">Twitter Link</p>
+        <Link id="twitter" href="https://twitter.com/Ibukunoluwatbk">Twitter Link</Link>
         <div className ='img'>        <img src={slackIcon} alt="" />
         <img src={gitIcon} alt="" /></div>
 
