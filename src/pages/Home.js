@@ -1,14 +1,14 @@
-import './styles/App.css';
-import Link from './components/Link.js';
-import slackIcon from './img/slack-icon.svg';
-import profile from './img/download (3).jpeg';
-import footimg from "./img/download (1).png" ;
-import gitIcon from "./img/github-icon.svg";
-import ingressive from "./img/images (2).png";
-import share from './img/download (2).png';
+import '../styles/Home.css';
+import Link from '../components/Link.js';
+import slackIcon from '../img/slack-icon.svg';
+import profile from '../img/download (3).jpeg';
+import footimg from "../img/download (1).png" ;
+import gitIcon from "../img/github-icon.svg";
+import ingressive from "../img/images (2).png";
+import share from '../img/download (2).png';
 
 
-function App() {
+export default function () {
   const links = [
     {id: 'btn__zuri', href: 'https://training.zuri.team/', title: 'Zuri Team'},
     {id: 'books', href: 'https://books.zuri.team/', title: 'Zuri Books',
@@ -18,6 +18,8 @@ function App() {
       subtext: 'A standalone service that does excellent background checks on developers'},
     {id: 'book__design', href: 'https://books.zuri.team/design-rules', title: 'Design Books',
       subtext: 'A guide to the right design principles and patterns for modern web designers'},
+      {id: 'contact', href: '/contact', title: 'Contact'},
+
   ];
 
   return (
@@ -57,5 +59,3 @@ function App() {
     </div>
     );
 }
-
-export default App;
